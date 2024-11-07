@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Sign-Up</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <input type="radio" name="form-toggle" id="login-tab" checked>
+        <input type="radio" name="form-toggle" id="signup-tab">
+
+        <div class="form-header">
+            <label for="login-tab" class="tab">Login</label>
+            <label for="signup-tab" class="tab">Sign Up</label>
+        </div>
+
+        <div class="form-container" id="loginForm">
+            <h2>Login</h2>
+            <form action="#">
+                <label for="loginEmail">Email</label>
+                <input type="email" id="loginEmail" name="email" required>
+
+                <label for="loginPassword">Password</label>
+                <input type="password" id="loginPassword" name="password" required>
+
+                <button type="submit">Login</button>
+                <p class="message">Don't have an account? <label for="signup-tab" class="switch-label">Sign Up</label></p>
+            </form>
+        </div>
+
+        <div class="form-container" id="signupForm">
+            <h2>Sign Up</h2>
+            <form action="#">
+                <label for="signupUsername">Username</label>
+                <input type="text" id="signupUsername" name="username" required>
+
+                <label for="signupEmail">Email</label>
+                <input type="email" id="signupEmail" name="email" required>
+
+                <label for="signupPassword">Password</label>
+                <input type="password" id="signupPassword" name="password" required>
+
+                <button type="submit">Sign Up</button>
+                <p class="message">Already have an account? <label for="login-tab" class="switch-label">Login</label></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

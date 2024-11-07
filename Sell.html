@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Waste - RecycleHub</title>
+    <link rel="stylesheet" href="sell.css">
+</head>
+<body>
+
+        <section class="sell-waste">
+        <h1>Sell Your Recyclable Waste</h1>
+        <p>Fill in the details below to sell your recyclable waste and make a payment.</p>
+        
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            
+            <div class="form-group">
+                <label for="waste-type">Type of Waste</label>
+                <select id="waste-type" name="waste-type" required>
+                    <option value="" disabled selected>Select waste type</option>
+                    <option value="plastic">Plastic</option>
+                    <option value="paper">Paper</option>
+                    <option value="glass">Glass</option>
+                    <option value="metal">Metal</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="textiles">Textiles</option>
+                    <option value="organic">Organic Waste</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="quantity">Quantity (kg)</label>
+                <input type="number" id="quantity" name="quantity" required>
+            </div>
+            <div class="form-group">
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" name="card-number" required placeholder="xxxx-xxxx-xxxx-xxxx">
+            </div>
+
+            <div class="form-group">
+                <label for="expiry-date">Expiry Date</label>
+                <input type="month" id="expiry-date" name="expiry-date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" required placeholder="xxx">
+            </div>
+            <button type="submit" class="btn-submit">Submit and Pay</button>
+        </form>
+    </section>
+
+</body>
+</html>
